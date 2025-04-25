@@ -12,11 +12,12 @@ A Python-based weather application that combines real-time weather data with Ope
 
 ## 🛠️ Technologies Used
 
-- Python 3.12
+- Python 3.12.3
 - Requests library for API interactions
 - OpenAI API for clothing suggestions
 - API Ninjas for geocoding
 - Open-Meteo API for weather data
+- UV package manager for dependency management
 
 ## ⚙️ Installation
 
@@ -37,7 +38,11 @@ A Python-based weather application that combines real-time weather data with Ope
 
 3. **Install required packages**
    ```bash
-   pip install -r requirements.txt
+   # Install uv if not already installed
+   pip install uv
+   
+   # Install dependencies using uv
+   uv pip install -r requirements.txt
    ```
 
 4. **Set up environment variables**
@@ -77,7 +82,6 @@ A Python-based weather application that combines real-time weather data with Ope
 6. Export DB to CSV
 7. Exit
 
-
 ## 🔑 API Keys Required
 
 This application requires two API keys to function:
@@ -85,7 +89,13 @@ This application requires two API keys to function:
 - OpenAI API key for clothing suggestions (Get it from [OpenAI](https://platform.openai.com))
 
 ## 📦 Project Structure
-weather-app/ ├── main.py # Main application file ├── weather_oop.py # Weather class implementation ├── .env # Environment variables (not in repo) ├── .env.example # Example environment file ├── requirements.txt # Project dependencies └── README.md # Project documentation
+weather-app/
+├── main.py # Main application file
+├── weather_oop.py # Weather class implementation
+├── .env # Environment variables (not in repo)
+├── .env.example # Example environment file
+├── requirements.txt # Project dependencies
+└── README.md # Project documentation
 
 ## 🤝 Contributing
 
@@ -97,10 +107,6 @@ Contributions are welcome! Feel free to submit issues and pull requests.
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## ⚠️ Note
+## ⚙️ Development
 
-Remember to never commit your actual API keys to the repository. Always use environment variables for sensitive data.
-
-## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details
+For adding new dependencies to the project:

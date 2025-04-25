@@ -1,0 +1,11 @@
+[project]
+name = "weather-app-api-oop-db"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.12"
+dependencies = [
+    "dotenv>=0.9.9",
+    "openai>=1.76.0",
+    "pylint~=3.0",
+    "requests>=2.32.3",
+]
